@@ -4,16 +4,16 @@ $("#autonomyButton").on( "click", function() {
 	$(".result").append('<div class="row" style="margin-top: 37px;">\
 	\
 	<div class="input-field col s4">\
-			<input id="capacityValue" type="text" class="validate"><label for="capacityValue" class="active">Capacité de la batterie (mAh)</label>\
+			<input id="capacityValue" type="text" class="validate"><label for="capacityValue" class="active">Battery Capacitance (mAh)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="systemConsumptionValue" type="text" class="validate"><label for="systemConsumptionValue" class="active">Consommation du système (mA)</label>\
+			<input id="systemConsumptionValue" type="text" class="validate"><label for="systemConsumptionValue" class="active">System consumption (mA)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="resultValue" type="text" class="validate" disabled><label for="resultValue" class="active">Heures d\'autonomie</label>\
+			<input id="resultValue" type="text" class="validate" disabled><label for="resultValue" class="active">Autonmy (in Hours)</label>\
 	</div>\
 	\
-	<a class="menuButton" id="computeButton" style="margin-top: 37px;">Calculer</a></div>');
+	<a class="menuButton" id="computeButton" style="margin-top: 37px;">Compute</a></div>');
 
 	$("#computeButton").on( "click", function() {
 
@@ -34,18 +34,18 @@ $("#batteryStateButton").on( "click", function() {
 	\
 	<div class="input-field col s3">\
     	<select class="browser-default" id="elementsValue" name="elementsValue">\
-      		<option value="" disabled selected>Nombre d\'éléments</option>\
-      		<option value="1">1 Élément</option>\
-      		<option value="2">2 Éléments</option>\
-      		<option value="3">3 Éléments</option>\
-      		<option value="4">4 Éléments</option>\
-      		<option value="5">5 Éléments</option>\
+      		<option value="" disabled selected>Elements Number</option>\
+      		<option value="1">1 Element</option>\
+      		<option value="2">2 Elements</option>\
+      		<option value="3">3 Elements</option>\
+      		<option value="4">4 Elements</option>\
+      		<option value="5">5 Elements</option>\
     	</select>\
     </div>\
 	<div class="input-field col s6">\
-			<input id="batteryVoltageValue" type="text" class="validate"><label for="batteryVoltageValue" class="active">Tension mesuré au borne de la batterie (en V)</label>\
+			<input id="batteryVoltageValue" type="text" class="validate"><label for="batteryVoltageValue" class="active">Output Battery Voltage (in V)</label>\
 	</div>\
-	<a class="menuButton" id="computeButton" style="margin-top: 12px;">Afficher l\'état</a><br/><br/><div class="state"></div></div>');
+	<a class="menuButton" id="computeButton" style="margin-top: 12px;">Show State</a><br/><br/><div class="state"></div></div>');
 
 	$("#computeButton").on( "click", function() {
 
@@ -61,27 +61,27 @@ $("#batteryStateButton").on( "click", function() {
 				if(batteryVoltage<=3.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">0% : Attention la batterie est vide !</p>');
+					$(".state").append('<p style="color: #D91E18;">0% : Be careful, the battery is empty !</p>');
 
 				}else if(batteryVoltage<=3.30){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">5% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">5% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=3.60){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">10% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">10% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=3.70){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">20% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #D91E18;">20% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=3.75){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">30% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #EB9532;">30% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=3.79){
 
@@ -91,7 +91,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage<=3.83){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">50% : La batterie est à la moitié de sa capacité</p>');
+					$(".state").append('<p style="color: #EB9532;">50% : The battery is at the middle of his capacity</p>');
 
 				}else if(batteryVoltage<=3.87){
 
@@ -116,7 +116,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage>=4.20){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #00B16A;">100% : La batterie est chargé au maximum</p>');
+					$(".state").append('<p style="color: #00B16A;">100% : The battery is fully charged</p>');
 
 				}
 
@@ -125,27 +125,27 @@ $("#batteryStateButton").on( "click", function() {
 				if(batteryVoltage<=6.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">0% : Attention la batterie est vide !</p>');
+					$(".state").append('<p style="color: #D91E18;">0% : Be careful, the battery is empty !</p>');
 
 				}else if(batteryVoltage<=6.60){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">5% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">5% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=7.20){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">10% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">10% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=7.40){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">20% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #D91E18;">20% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=7.50){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">30% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #EB9532;">30% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=7.58){
 
@@ -155,7 +155,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage<=7.66){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">50% : La batterie est à la moitié de sa capacité</p>');
+					$(".state").append('<p style="color: #EB9532;">50% : The battery is at the middle of his capacity</p>');
 
 				}else if(batteryVoltage<=7.74){
 
@@ -180,7 +180,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage>=8.40){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #00B16A;">100% : La batterie est chargé au maximum</p>');
+					$(".state").append('<p style="color: #00B16A;">100% : The battery is fully charged</p>');
 
 				}
 
@@ -189,27 +189,27 @@ $("#batteryStateButton").on( "click", function() {
 				if(batteryVoltage<=9.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">0% : Attention la batterie est vide !</p>');
+					$(".state").append('<p style="color: #D91E18;">0% : Be careful, the battery is empty !</p>');
 
 				}else if(batteryVoltage<=9.90){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">5% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">5% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=10.80){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">10% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">10% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=11.10){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">20% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #D91E18;">20% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=11.25){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">30% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #EB9532;">30% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=11.37){
 
@@ -219,7 +219,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage<=11.49){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">50% : La batterie est à la moitié de sa capacité</p>');
+					$(".state").append('<p style="color: #EB9532;">50% : The battery is at the middle of his capacity</p>');
 
 				}else if(batteryVoltage<=11.61){
 
@@ -244,7 +244,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage>=12.60){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #00B16A;">100% : La batterie est chargé au maximum</p>');
+					$(".state").append('<p style="color: #00B16A;">100% : The battery is fully charged</p>');
 
 				}
 
@@ -253,27 +253,27 @@ $("#batteryStateButton").on( "click", function() {
 				if(batteryVoltage<=12.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">0% : Attention la batterie est vide !</p>');
+					$(".state").append('<p style="color: #D91E18;">0% : Be careful, the battery is empty !</p>');
 
 				}else if(batteryVoltage<=13.20){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">5% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">5% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=14.40){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">10% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">10% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=14.80){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">20% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #D91E18;">20% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=15.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">30% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #EB9532;">30% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=15.16){
 
@@ -283,7 +283,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage<=15.32){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">50% : La batterie est à la moitié de sa capacité</p>');
+					$(".state").append('<p style="color: #EB9532;">50% : The battery is at the middle of his capacity</p>');
 
 				}else if(batteryVoltage<=15.48){
 
@@ -308,7 +308,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage>=16.80){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #00B16A;">100% : La batterie est chargé au maximum</p>');
+					$(".state").append('<p style="color: #00B16A;">100% : The battery is fully charged</p>');
 
 				}
 
@@ -318,27 +318,27 @@ $("#batteryStateButton").on( "click", function() {
 				if(batteryVoltage<=15.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">0% : Attention la batterie est vide !</p>');
+					$(".state").append('<p style="color: #D91E18;">0% : Be careful, the battery is empty !</p>');
 
 				}else if(batteryVoltage<=16.50){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">5% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">5% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=18.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">10% : Il faut recharger la batterie au plus vite !</p>');
+					$(".state").append('<p style="color: #D91E18;">10% : You have to charge the battery !</p>');
 
 				}else if(batteryVoltage<=18.50){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #D91E18;">20% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #D91E18;">20% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=18.75){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">30% : La batterie commence à se vider progressivement !</p>');
+					$(".state").append('<p style="color: #EB9532;">30% : The battery starts to drain !</p>');
 
 				}else if(batteryVoltage<=18.95){
 
@@ -348,7 +348,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage<=19.15){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #EB9532;">50% : La batterie est à la moitié de sa capacité</p>'); 
+					$(".state").append('<p style="color: #EB9532;">50% : The battery is at the middle of his capacity</p>'); 
 
 				}else if(batteryVoltage<=19.35){
 
@@ -373,7 +373,7 @@ $("#batteryStateButton").on( "click", function() {
 				}else if(batteryVoltage>=21.00){
 
 					$(".state").empty();
-					$(".state").append('<p style="color: #00B16A;">100% : La batterie est chargé au maximum</p>');
+					$(".state").append('<p style="color: #00B16A;">100% : The battery is fully charged</p>');
 
 				}
 
@@ -389,20 +389,20 @@ $("#batteryStateButton").on( "click", function() {
 $("#chargingTimeButton").on( "click", function() {
 
 	$(".result").empty();
-	$(".result").append('<p style="color: #D91E18;">Attention : On suppose dans ces calculs que la batterie est totalement déchargée ! </p>\
+	$(".result").append('<p style="color: #D91E18;">Caution :We suppose that the battery is fully discharged ! </p>\
 	<div class="row" style="margin-top: 37px;">\
 	\
 	<div class="input-field col s4">\
-			<input id="capacityValue" type="text" class="validate"><label for="capacityValue" class="active">Capacité de la batterie (mAh)</label>\
+			<input id="capacityValue" type="text" class="validate"><label for="capacityValue" class="active">Battery capacity (mAh)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="chargingCurrentValue" type="text" class="validate"><label for="chargingCurrentValue" class="active">Courant de charge (mA)</label>\
+			<input id="chargingCurrentValue" type="text" class="validate"><label for="chargingCurrentValue" class="active">Charging current (mA)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="resultValue" type="text" class="validate" disabled><label for="resultValue" class="active">Temps de charge (en Heures)</label>\
+			<input id="resultValue" type="text" class="validate" disabled><label for="resultValue" class="active">Charging time (in Hours)</label>\
 	</div>\
 	\
-	<a class="menuButton" id="computeButton" style="margin-top: 37px;">Calculer</a></div>');
+	<a class="menuButton" id="computeButton" style="margin-top: 37px;">Compute</a></div>');
 
 	$("#computeButton").on( "click", function() {
 

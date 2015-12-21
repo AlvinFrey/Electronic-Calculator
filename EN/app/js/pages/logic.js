@@ -5,21 +5,21 @@ $("#conversionButton").on( "click", function() {
 	$(".result").append('<div class="row" style="margin-left: 205px;margin-top: 20px;">\
 	\
 	<div class="input-field col s8">\
-			<input id="decimalValue" type="text" class="validate"><label for="decimalValue" class="active">Décimal</label>\
+			<input id="decimalValue" type="text" class="validate"><label for="decimalValue" class="active">Decimal</label>\
 	</div>\
 	<br/>\
 	<br/>\
 	<br/>\
 	<br/>\
 	<div class="input-field col s8">\
-			<input id="hexadecimalValue" type="text" class="validate"><label for="hexadecimalValue" class="active">Hexadécimal</label>\
+			<input id="hexadecimalValue" type="text" class="validate"><label for="hexadecimalValue" class="active">Hexadecimal</label>\
 	</div>\
 	<br/>\
 	<br/>\
 	<br/>\
 	<br/>\
 	<div class="input-field col s8">\
-			<input id="binaryValue" type="text" class="validate"><label for="binaryValue" class="active">Binaire</label>\
+			<input id="binaryValue" type="text" class="validate"><label for="binaryValue" class="active">Binary</label>\
 	</div>\
 	\
 	</div>');
@@ -72,29 +72,29 @@ $("#logicGateButton").on( "click", function() {
 	$(".result").append('<div class="row" style="margin-left: 155px;margin-top: 20px;">\
 	\
 	<div class="input-field col s3">\
-			<input id="binaryNumber1" type="text" class="validate"><label for="binaryNumber1" class="active">Nombre Binaire N°1</label>\
+			<input id="binaryNumber1" type="text" class="validate"><label for="binaryNumber1" class="active">Binary Number N°1</label>\
 	</div>\
 	\
 	<div class="col s3">\
 		<select class="browser-default" id="operator" name="operator" style="margin-top: 15px;">\
-	      	<option value="" disabled selected>Opérateur</option>\
-	      	<option value="AND">ET</option>\
-	      	<option value="OR">OU</option>\
-	      	<option value="XOR">OU EXCLUSIF</option>\
+	      	<option value="" disabled selected>Operator</option>\
+	      	<option value="AND">AND</option>\
+	      	<option value="OR">OR</option>\
+	      	<option value="XOR">XOR</option>\
 	    </select>\
     </div>\
     <div class="input-field col s3">\
-			<input id="binaryNumber2" type="text" class="validate"><label for="binaryNumber2" class="active">Nombre Binaire N°2</label>\
+			<input id="binaryNumber2" type="text" class="validate"><label for="binaryNumber2" class="active">Binary Number N°2</label>\
 	</div>\
 	<br/>\
 	<br/>\
 	<br/>\
 	<br/>\
 	<div class="input-field col s3" style="margin-left: 165px;"">\
-			<input id="result" type="text" class="validate" disabled><label for="result" class="active">Résultat</label>\
+			<input id="result" type="text" class="validate" disabled><label for="result" class="active">Results</label>\
 	</div>\
 	</div>\
-	<a class="menuButton" id="logicComputeButton" style="margin-top: 7px;">Calculer</a>');
+	<a class="menuButton" id="logicComputeButton" style="margin-top: 7px;">Compute</a>');
 
 	$("#logicComputeButton").on( "click", function(){
 

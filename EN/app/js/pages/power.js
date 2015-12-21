@@ -5,51 +5,51 @@ $("#powerButton").on( "click", function(){
 	$(".result").append('<div class="row" style="margin-left: 10px;margin-top: 20px;">\
 		\
 		<div class="input-field col s2">\
-			<input id="voltage1" type="text" class="validate"><label for="voltage1" class="active">Tension (V)</label>\
+			<input id="voltage1" type="text" class="validate"><label for="voltage1" class="active">Voltage (V)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">X</div>\
 		<div class="input-field col s2">\
-			<input id="current1" type="text" class="validate"><label for="current1" class="active">Intensité (A)</label>\
+			<input id="current1" type="text" class="validate"><label for="current1" class="active">Current (A)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">=</div>\
 		<div class="input-field col s3">\
-			<input id="outputPower1" type="text" class="validate" disabled><label for="outputVoltage" class="active">Puissance (W)</label>\
+			<input id="outputPower1" type="text" class="validate" disabled><label for="outputVoltage" class="active">Power (W)</label>\
 		</div>\
-		<a class="menuButton" id="powerButton1" style="margin-top: 12px;">Calculer</a>\
+		<a class="menuButton" id="powerButton1" style="margin-top: 12px;">Compute</a>\
 		\
 		<br/>\
 		<br/>\
 		<br/>\
 		\
 		<div class="input-field col s2">\
-			<input id="resistor2" type="text" class="validate"><label for="resistor2" class="active">Résistance (Ω)</label>\
+			<input id="resistor2" type="text" class="validate"><label for="resistor2" class="active">Resistor (Ω)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">X</div>\
 		<div class="input-field col s2">\
-			<input id="current2" type="text" class="validate"><label for="current2" class="active">Intensité (A)</label>\
+			<input id="current2" type="text" class="validate"><label for="current2" class="active">Current (A)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">=</div>\
 		<div class="input-field col s3">\
-			<input id="outputPower2" type="text" class="validate" disabled><label for="outputPower2" class="active">Puissance (W)</label>\
+			<input id="outputPower2" type="text" class="validate" disabled><label for="outputPower2" class="active">Power (W)</label>\
 		</div>\
-		<a class="menuButton" id="powerButton2" style="margin-top: 12px;">Calculer</a>\
+		<a class="menuButton" id="powerButton2" style="margin-top: 12px;">Compute</a>\
 		\
 		<br/>\
 		<br/>\
 		<br/>\
 		\
 		<div class="input-field col s2">\
-			<input id="voltage3" type="text" class="validate"><label for="voltage3" class="active">Tension (V)</label>\
+			<input id="voltage3" type="text" class="validate"><label for="voltage3" class="active">Voltage (V)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">/</div>\
 		<div class="input-field col s2">\
-			<input id="resistor3" type="text" class="validate"><label for="resistor3" class="active">Résistance (Ω)</label>\
+			<input id="resistor3" type="text" class="validate"><label for="resistor3" class="active">Resistor (Ω)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">=</div>\
 		<div class="input-field col s3">\
-			<input id="outputPower3" type="text" class="validate" disabled><label for="outputResistor3" class="active">Puissance (W)</label>\
+			<input id="outputPower3" type="text" class="validate" disabled><label for="outputResistor3" class="active">Power (W)</label>\
 		</div>\
-		<a class="menuButton" id="powerButton3" style="margin-top: 12px;">Calculer</a></div>');
+		<a class="menuButton" id="powerButton3" style="margin-top: 12px;">Compute</a></div>');
 
 	$("#powerButton1").on( "click", function() {
 
@@ -103,31 +103,29 @@ $("#objectConsumptionButton").on( "click",function(){
 	$(".result").append('<div class="row" style="margin-top: 37px;">\
 	\
 	<div class="input-field col s4">\
-			<input id="objectConsumptionValue" type="text" class="validate"><label for="objectConsumptionValue" class="active">Puissance de l\'appareil (W)</label>\
+			<input id="objectConsumptionValue" type="text" class="validate"><label for="objectConsumptionValue" class="active">Object Power (W)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="kwhPriceValue" type="text" class="validate" value="0.14670"><label for="kwhPriceValue" class="active">Prix du Kwh(€/kWh)</label>\
+			<input id="kwhPriceValue" type="text" class="validate" value="0.14670"><label for="kwhPriceValue" class="active">Kwh Price (€/kWh)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="useTimeValue" type="text" class="validate"><label for="useTimeValue" class="active">Temps d\'utilisation (en Heures)</label>\
+			<input id="useTimeValue" type="text" class="validate"><label for="useTimeValue" class="active">Use time (in Hours)</label>\
 	</div>\
 	</div>\
 	<div class="row" style="margin-top: 37px;">\
 	<div class="input-field col s4">\
-			<input id="resultValueDaily" type="text" class="validate" disabled><label for="resultValueDaily" class="active">Coût pour la journée (€)</label>\
+			<input id="resultValueDaily" type="text" class="validate" disabled><label for="resultValueDaily" class="active">Price for a day (€)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="resultValueMonthly" type="text" class="validate" disabled><label for="resultValueMonthly" class="active">Coût pour le mois (€)</label>\
+			<input id="resultValueMonthly" type="text" class="validate" disabled><label for="resultValueMonthly" class="active">Price for a month (€)</label>\
 	</div>\
 	<div class="input-field col s4">\
-			<input id="resultValueYearly" type="text" class="validate" disabled><label for="resultValueYearly" class="active">Coût pour l\'année (€)</label>\
+			<input id="resultValueYearly" type="text" class="validate" disabled><label for="resultValueYearly" class="active">Price for the year (€)</label>\
 	</div>\
 	\
-	<a class="menuButton" id="computeButton" style="margin-top: 37px;">Calculer</a></div>');
+	<a class="menuButton" id="computeButton" style="margin-top: 37px;">Compute</a></div>');
 
 	$("#computeButton").on( "click", function() {
-
-		console.log($("#kwhPriceValue").val());
 
 		if($("#objectConsumptionValue").val()!="" && $("#kwhPriceValue").val()!="" && $("#useTimeValue").val()!=""){
 

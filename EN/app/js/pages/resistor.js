@@ -5,51 +5,51 @@ $("#ohmButton").on( "click", function() {
 	$(".result").append('<div class="row" style="margin-left: 10px;margin-top: 20px;">\
 		\
 		<div class="input-field col s2">\
-			<input id="resistor1" type="text" class="validate"><label for="resistor" class="active">Résistance (Ω)</label>\
+			<input id="resistor1" type="text" class="validate"><label for="resistor" class="active">Resistor (Ω)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">X</div>\
 		<div class="input-field col s2">\
-			<input id="current1" type="text" class="validate"><label for="current" class="active">Intensité (A)</label>\
+			<input id="current1" type="text" class="validate"><label for="current" class="active">Current (A)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">=</div>\
 		<div class="input-field col s3">\
-			<input id="outputVoltage" type="text" class="validate" disabled><label for="outputVoltage" class="active">Tension (V)</label>\
+			<input id="outputVoltage" type="text" class="validate" disabled><label for="outputVoltage" class="active">Voltage (V)</label>\
 		</div>\
-		<a class="menuButton" id="voltageButton" style="margin-top: 12px;">Calculer</a>\
+		<a class="menuButton" id="voltageButton" style="margin-top: 12px;">Compute</a>\
 		\
 		<br/>\
 		<br/>\
 		<br/>\
 		\
 		<div class="input-field col s2">\
-			<input id="voltage2" type="text" class="validate"><label for="voltage" class="active">Tension (V)</label>\
+			<input id="voltage2" type="text" class="validate"><label for="voltage" class="active">Voltage (V)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">/</div>\
 		<div class="input-field col s2">\
-			<input id="resistor2" type="text" class="validate"><label for="resistor" class="active">Résistance (Ω)</label>\
+			<input id="resistor2" type="text" class="validate"><label for="resistor" class="active">Resistor (Ω)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">=</div>\
 		<div class="input-field col s3">\
-			<input id="outputCurrent" type="text" class="validate" disabled><label for="outputCurrent" class="active">Intensité (A)</label>\
+			<input id="outputCurrent" type="text" class="validate" disabled><label for="outputCurrent" class="active">Current (A)</label>\
 		</div>\
-		<a class="menuButton" id="currentButton" style="margin-top: 12px;">Calculer</a>\
+		<a class="menuButton" id="currentButton" style="margin-top: 12px;">Compute</a>\
 		\
 		<br/>\
 		<br/>\
 		<br/>\
 		\
 		<div class="input-field col s2">\
-			<input id="voltage3" type="text" class="validate"><label for="voltage" class="active">Tension (V)</label>\
+			<input id="voltage3" type="text" class="validate"><label for="voltage" class="active">Voltage (V)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">/</div>\
 		<div class="input-field col s2">\
-			<input id="current3" type="text" class="validate"><label for="current" class="active">Intensité (A)</label>\
+			<input id="current3" type="text" class="validate"><label for="current" class="active">Current (A)</label>\
 		</div>\
 		<div class="col s1" style="margin-top: 20px;">=</div>\
 		<div class="input-field col s3">\
-			<input id="outputResistor" type="text" class="validate" disabled><label for="outputResistor" class="active">Résistance (Ω)</label>\
+			<input id="outputResistor" type="text" class="validate" disabled><label for="outputResistor" class="active">Resistor (Ω)</label>\
 		</div>\
-		<a class="menuButton" id="resistorButton" style="margin-top: 12px;">Calculer</a></div>');
+		<a class="menuButton" id="resistorButton" style="margin-top: 12px;">Compute</a></div>');
 
 	$("#voltageButton").on( "click", function() {
 
@@ -104,13 +104,13 @@ $("#bridgeButton").on( "click", function() {
 		<img src="../../images/schemas/Schema Pont Diviseur.png" style="width: 350px; height: 250px;display: inline-block;float: left; margin-left: 20px;margin-right: 15px;"></img>\
 		\
 		<div class="input-field col s2" style="margin-top: 55px;">\
-			<input id="inputVoltage" type="text" class="validate"><label for="inputVoltage" class="active">Tension d\'entrée (V)</label>\
+			<input id="inputVoltage" type="text" class="validate"><label for="inputVoltage" class="active">Input Voltage (V)</label>\
 		</div>\
 		<div class="input-field col s2" style="margin-top: 55px;">\
-			<input id="resistor1" type="text" class="validate"><label for="resistor1" class="active">Résistance 1 (Ω)</label>\
+			<input id="resistor1" type="text" class="validate"><label for="resistor1" class="active">Resistor 1 (Ω)</label>\
 		</div>\
 		<div class="input-field col s2" style="margin-top: 55px;">\
-			<input id="resistor2" type="text" class="validate"><label for="resistor2" class="active">Résistance 2 (Ω)</label>\
+			<input id="resistor2" type="text" class="validate"><label for="resistor2" class="active">Resistor 2 (Ω)</label>\
 		</div>\
 		<br/>\
 		<br/>\
@@ -118,7 +118,7 @@ $("#bridgeButton").on( "click", function() {
 		<br/>\
 		<br/>\
 		<div class="input-field col s6">\
-			<input id="outputDivider" type="text" class="validate" disabled><label for="outputDivider" class="active">Tension de Sortie (V)</label>\
+			<input id="outputDivider" type="text" class="validate" disabled><label for="outputDivider" class="active">Output Voltage (V)</label>\
 		</div></div>');
 
 	$("input").on( "change", function() {
@@ -142,11 +142,11 @@ $("#bridgeButton").on( "click", function() {
 $("#colorButton").on( "click", function() {
 
 	$(".result").empty();
-	$(".result").append('<a class="menuButton" id="4colorButton" style="background-color: #FF9651;">4 Couleurs</a>\
+	$(".result").append('<a class="menuButton" id="4colorButton" style="background-color: #FF9651;">4 Colors</a>\
 	\
-	<a class="menuButton" id="5colorButton" style="background-color: #FF9651;">5 Couleurs</a>\
+	<a class="menuButton" id="5colorButton" style="background-color: #FF9651;">5 Colors</a>\
 	\
-	<a class="menuButton" id="6colorButton" style="background-color: #FF9651;">6 Couleurs</a>\
+	<a class="menuButton" id="6colorButton" style="background-color: #FF9651;">6 Colors</a>\
 	\
 	<div class="settings" style="margin-top: 20px;">');
 
@@ -155,60 +155,60 @@ $("#colorButton").on( "click", function() {
 		$(".settings").empty();
 		$(".settings").append('<div class="row"><div class="input-field col s12 m3">\
     		<select class="browser-default" id="color1" name="color1">\
-      			<option value="" disabled selected>Couleur 1</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 1</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value">Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value">Nothing</option>\
     		</select>\
     		</div>\
     	<div class="input-field col s12 m3">\
     		<select class="browser-default" id="color2" name="color2">\
-      			<option value="" disabled selected>Couleur 2</option>\
-      			<option value="0" style="background-color: #212121;">Noir</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 2</option>\
+      			<option value="0" style="background-color: #212121;">Black</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value>Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m3">\
     		<select class="browser-default" id="color3" name="color3">\
-      			<option value="" disabled selected>Couleur 3</option>\
-      			<option value="100" style="background-color: #212121;">Noir</option>\
-      			<option value="1000" style="background-color: #4E342E;">Marron</option>\
-      			<option value="10000" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 3</option>\
+      			<option value="100" style="background-color: #212121;">Black</option>\
+      			<option value="1000" style="background-color: #4E342E;">Brown</option>\
+      			<option value="10000" style="background-color: #C62828;">Red</option>\
       			<option value="100000" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="1000000" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="10000000" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="100000000" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="10" style="background-color: #F7CA18;">Or</option>\
-      			<option value="1" style="background-color: #BFBFBF;">Argent</option>\
-      			<option value>Aucune</option>\
+      			<option value="1000000" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="10000000" style="background-color: #2E7D32;">Green</option>\
+      			<option value="100000000" style="background-color: #2979FF;">Blue</option>\
+      			<option value="10" style="background-color: #F7CA18;">Gold</option>\
+      			<option value="1" style="background-color: #BFBFBF;">Silver</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m3">\
     		<select class="browser-default" id="color4" name="color4">\
-      			<option value="" disabled selected>Couleur 4</option>\
-      			<option value="1%" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2%" style="background-color: #C62828;">Rouge</option>\
-      			<option value="5%" style="background-color: #F7CA18;">Or</option>\
-      			<option value="10%" style="background-color: #BFBFBF;">Argent</option>\
-      			<option value>Aucune</option>\
+      			<option value="" disabled selected>Color 4</option>\
+      			<option value="1%" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2%" style="background-color: #C62828;">Red</option>\
+      			<option value="5%" style="background-color: #F7CA18;">Gold</option>\
+      			<option value="10%" style="background-color: #BFBFBF;">Silver</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
@@ -217,12 +217,11 @@ $("#colorButton").on( "click", function() {
  		<br/>\
  		<br/>\
  		<div class="input-field col s5">\
-			<input id="resistorOutput" type="text" class="validate" disabled><label for="resistorOutput" class="active">Résistance</label>\
+			<input id="resistorOutput" type="text" class="validate" disabled><label for="resistorOutput" class="active">Resistor</label>\
 		</div>\
 		<div class="input-field col s5">\
-			<input id="toleranceOutput" type="text" class="validate" disabled><label for="toleranceOutput" class="active">Tolérance associé</label>\
-		</div>\
-		</div>');
+			<input id="toleranceOutput" type="text" class="validate" disabled><label for="toleranceOutput" class="active">Associated Tolerance</label>\
+		</div></div>');
 
 		$('select').material_select();
 
@@ -270,75 +269,75 @@ $("#colorButton").on( "click", function() {
 		$(".settings").empty();
 		$(".settings").append('<div class="row"><div class="input-field col s12 m2" style="margin-left: 65px;">\
     		<select class="browser-default" id="color1" name="color1">\
-      			<option value="" disabled selected>Couleur 1</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 1</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown/option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value">Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value">Nothing</option>\
     		</select>\
     		</div>\
     	<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color2" name="color2">\
-      			<option value="" disabled selected>Couleur 2</option>\
-      			<option value="0" style="background-color: #212121;">Noir</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 2</option>\
+      			<option value="0" style="background-color: #212121;">Black</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value>Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color3" name="color3">\
-      			<option value="" disabled selected>Couleur 3</option>\
-      			<option value="0" style="background-color: #212121;">Noir</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 3</option>\
+      			<option value="0" style="background-color: #212121;">Black</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value>Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color4" name="color4">\
-      			<option value="" disabled selected>Couleur 4</option>\
-      			<option value="100" style="background-color: #212121;">Noir</option>\
-      			<option value="1000" style="background-color: #4E342E;">Marron</option>\
-      			<option value="10000" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 4</option>\
+      			<option value="100" style="background-color: #212121;">Black</option>\
+      			<option value="1000" style="background-color: #4E342E;">Brown</option>\
+      			<option value="10000" style="background-color: #C62828;">Red</option>\
       			<option value="100000" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="1000000" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="10" style="background-color: #F7CA18;">Or</option>\
-      			<option value="1" style="background-color: #BFBFBF;">Argent</option>\
-      			<option value>Aucune</option>\
+      			<option value="1000000" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="10" style="background-color: #F7CA18;">Gold</option>\
+      			<option value="1" style="background-color: #BFBFBF;">Silver</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color5" name="color5">\
-      			<option value="" disabled selected>Couleur 5</option>\
-      			<option value="1%" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2%" style="background-color: #C62828;">Rouge</option>\
-      			<option value="5%" style="background-color: #F7CA18;">Or</option>\
-      			<option value="10%" style="background-color: #BFBFBF;">Argent</option>\
-      			<option value>Aucune</option>\
+      			<option value="" disabled selected>Color 5</option>\
+      			<option value="1%" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2%" style="background-color: #C62828;">Red</option>\
+      			<option value="5%" style="background-color: #F7CA18;">Gold</option>\
+      			<option value="10%" style="background-color: #BFBFBF;">Silver</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
@@ -347,12 +346,11 @@ $("#colorButton").on( "click", function() {
  		<br/>\
  		<br/>\
  		<div class="input-field col s5">\
-			<input id="resistorOutput" type="text" class="validate" disabled><label for="resistorOutput" class="active">Résistance</label>\
+			<input id="resistorOutput" type="text" class="validate" disabled><label for="resistorOutput" class="active">Resistor</label>\
 		</div>\
 		<div class="input-field col s5">\
-			<input id="toleranceOutput" type="text" class="validate" disabled><label for="toleranceOutput" class="active">Tolérance associé</label>\
-		</div>\
-		</div>');
+			<input id="toleranceOutput" type="text" class="validate" disabled><label for="toleranceOutput" class="active">Associated Resistor</label>\
+		</div></div>');
 
 		$('select').material_select();
 
@@ -403,91 +401,91 @@ $("#colorButton").on( "click", function() {
 		$(".settings").empty();
 		$(".settings").append('<div class="row"><div class="input-field col s12 m2">\
     		<select class="browser-default" id="color1" name="color1">\
-      			<option value="" disabled selected>Couleur 1</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 1</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value">Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value">Nothing</option>\
     		</select>\
     		</div>\
     	<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color2" name="color2">\
-      			<option value="" disabled selected>Couleur 2</option>\
-      			<option value="0" style="background-color: #212121;">Noir</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 2</option>\
+      			<option value="0" style="background-color: #212121;">Black</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value>Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color3" name="color3">\
-      			<option value="" disabled selected>Couleur 3</option>\
-      			<option value="0" style="background-color: #212121;">Noir</option>\
-      			<option value="1" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 3</option>\
+      			<option value="0" style="background-color: #212121;">Black</option>\
+      			<option value="1" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2" style="background-color: #C62828;">Red</option>\
       			<option value="3" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="4" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="5" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="6" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="7" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="8" style="background-color: #616161;">Gris</option>\
-      			<option value="9">Blanc</option>\
-      			<option value>Aucune</option>\
+      			<option value="4" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="5" style="background-color: #2E7D32;">Green</option>\
+      			<option value="6" style="background-color: #2979FF;">Blue</option>\
+      			<option value="7" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="8" style="background-color: #616161;">Grey</option>\
+      			<option value="9">White</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color4" name="color4">\
-      			<option value="" disabled selected>Couleur 4</option>\
-      			<option value="100" style="background-color: #212121;">Noir</option>\
-      			<option value="1000" style="background-color: #4E342E;">Marron</option>\
-      			<option value="10000" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 4</option>\
+      			<option value="100" style="background-color: #212121;">Black</option>\
+      			<option value="1000" style="background-color: #4E342E;">Brown</option>\
+      			<option value="10000" style="background-color: #C62828;">Red</option>\
       			<option value="100000" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="1000000" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="10" style="background-color: #F7CA18;">Or</option>\
-      			<option value="1" style="background-color: #BFBFBF;">Argent</option>\
-      			<option value>Aucune</option>\
+      			<option value="1000000" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="10" style="background-color: #F7CA18;">Gold</option>\
+      			<option value="1" style="background-color: #BFBFBF;">Silver</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color5" name="color5">\
-      			<option value="" disabled selected>Couleur 5</option>\
-      			<option value="1%" style="background-color: #4E342E;">Marron</option>\
-      			<option value="2%" style="background-color: #C62828;">Rouge</option>\
-      			<option value="0.5%" style="background-color: #2E7D32;">Vert</option>\
-      			<option value="0.25%" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="0.1%" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value="5%" style="background-color: #F7CA18;">Or</option>\
-      			<option value="10%" style="background-color: #BFBFBF;">Argent</option>\
-      			<option value>Aucune</option>\
+      			<option value="" disabled selected>Color 5</option>\
+      			<option value="1%" style="background-color: #4E342E;">Brown</option>\
+      			<option value="2%" style="background-color: #C62828;">Red</option>\
+      			<option value="0.5%" style="background-color: #2E7D32;">Green</option>\
+      			<option value="0.25%" style="background-color: #2979FF;">Blue</option>\
+      			<option value="0.1%" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value="5%" style="background-color: #F7CA18;">Gold</option>\
+      			<option value="10%" style="background-color: #BFBFBF;">Silver</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
  		<div class="input-field col s12 m2">\
     		<select class="browser-default" id="color6" name="color6">\
-      			<option value="" disabled selected>Couleur 6</option>\
-      			<option value="100ppm" style="background-color: #4E342E;">Marron</option>\
-      			<option value="50ppm" style="background-color: #C62828;">Rouge</option>\
+      			<option value="" disabled selected>Color 6</option>\
+      			<option value="100ppm" style="background-color: #4E342E;">Brown</option>\
+      			<option value="50ppm" style="background-color: #C62828;">Red</option>\
       			<option value="15ppm" style="background-color: #EF6C00;">Orange</option>\
-      			<option value="25ppm" style="background-color: #FFD600;">Jaune</option>\
-      			<option value="10ppm" style="background-color: #2979FF;">Bleu</option>\
-      			<option value="5ppm" style="background-color: #6A1B9A;">Violet</option>\
-      			<option value>Aucune</option>\
+      			<option value="25ppm" style="background-color: #FFD600;">Yellow</option>\
+      			<option value="10ppm" style="background-color: #2979FF;">Blue</option>\
+      			<option value="5ppm" style="background-color: #6A1B9A;">Purple</option>\
+      			<option value>Nothing</option>\
     		</select>\
     		\
  		</div>\
@@ -496,10 +494,10 @@ $("#colorButton").on( "click", function() {
  		<br/>\
  		<br/>\
  		<div class="input-field col s5">\
-			<input id="resistorOutput" type="text" class="validate" disabled><label for="resistorOutput" class="active">Résistance</label>\
+			<input id="resistorOutput" type="text" class="validate" disabled><label for="resistorOutput" class="active">Resistor</label>\
 		</div>\
 		<div class="input-field col s5">\
-			<input id="toleranceOutput" type="text" class="validate" disabled><label for="toleranceOutput" class="active">Tolérance associé</label>\
+			<input id="toleranceOutput" type="text" class="validate" disabled><label for="toleranceOutput" class="active">Associated Tolerance</label>\
 		</div>\
 		</div>');
 
@@ -564,13 +562,13 @@ $("#ledResistorButton").on( "click", function() {
 		<img src="../../images/schemas/Schema Résistance Série LED.png" style="width: 250px; height: 200px;display: inline-block;float: left; margin-left: 20px;margin-right: 15px;"></img>\
 		\
 		<div class="input-field col s2" style="margin-top: 55px;">\
-			<input id="inputVoltage" type="text" class="validate"><label for="inputVoltage" class="active">Tension d\'entrée (V)</label>\
+			<input id="inputVoltage" type="text" class="validate"><label for="inputVoltage" class="active">Input Voltage (V)</label>\
 		</div>\
 		<div class="input-field col s2" style="margin-top: 55px;">\
-			<input id="ledVoltage" type="text" class="validate"><label for="ledVoltage" class="active">Tension de la LED (V)</label>\
+			<input id="ledVoltage" type="text" class="validate"><label for="ledVoltage" class="active">LED Voltage (V)</label>\
 		</div>\
 		<div class="input-field col s2" style="margin-top: 55px;">\
-			<input id="ledCurrent" type="text" class="validate"><label for="ledCurrent" class="active">Intensité sur la LED (mA)</label>\
+			<input id="ledCurrent" type="text" class="validate"><label for="ledCurrent" class="active">LED Current (mA)</label>\
 		</div>\
 		<br/>\
 		<br/>\
@@ -578,7 +576,7 @@ $("#ledResistorButton").on( "click", function() {
 		<br/>\
 		<br/>\
 		<div class="input-field col s6">\
-			<input id="outputResistor" type="text" class="validate" disabled><label for="outputResistor" class="active">Résistance à mettre en série (Ω)</label>\
+			<input id="outputResistor" type="text" class="validate" disabled><label for="outputResistor" class="active">Resistor to put in serial (Ω)</label>\
 		</div></div>');
 
 	$("input").on( "change", function(){

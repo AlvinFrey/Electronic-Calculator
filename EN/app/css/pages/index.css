@@ -35,11 +35,8 @@
     
 }
 
-#resistorTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=R%C3%A9sistances&w=200&h=100);}
-#capacitorTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Condensateurs&w=200&h=100);}
-#logicTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Logique%20Binaire&w=200&h=100);}
-#batteryTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Batterie&w=200&h=100);}
-#powerTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=%C3%89lectricit%C3%A9&w=200&h=100);}
-#photovoltaicTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Panneaux&w=200&h=100);}
-#convertTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Conversions&w=200&h=100);}
+#resistorTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Resistor&w=200&h=100);}
+#logicTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Binary%20Logic&w=200&h=100);}
+#batteryTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Battery&w=200&h=100);}
+#powerTile{background-image: url(http://placeholdit.imgix.net/~text?txtsize=33&txt=Electricity&w=200&h=100);}
 
