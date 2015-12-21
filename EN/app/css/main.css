@@ -54,7 +54,17 @@ h5{
 }
 
 .controls #refresh {
-  background: url("../images/controls/refresh.svg");
+  background: url("../images/controls/reload.svg");
+}
+
+.controls #refresh:hover {
+  background: url("../images/controls/reload-hover.svg");
+}
+
+.controls #home {
+  background: url(https://cdn1.iconfinder.com/data/icons/flat-artistic-shopping-icons/32/home-24.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 
