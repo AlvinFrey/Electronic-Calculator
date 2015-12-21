@@ -1,0 +1,14 @@
+{
+  "name": "electronic-calculator",
+  "version": "0.1.0",
+  "main": "app/html/index.html",
+  "window": {
+    "title": "ElectronicCalculator",
+    "icon": "app/icon.png",
+    "width": 800,
+    "height": 480,
+    "toolbar": false,
+    "frame": false,
+    "resizable": false
+  }
+}
