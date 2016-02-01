@@ -1,0 +1,43 @@
+
+.center{
+
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.tile {
+
+  border-radius: 2px;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  -webkit-app-region: no-drag;
+
+}
+
+.tile:hover{
+ 
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-box-shadow: 0px 0px 40px -1px rgba(0,0,0,0.93);
+  -moz-box-shadow: 0px 0px 40px -1px rgba(0,0,0,0.93);
+  box-shadow: 0px 0px 40px -1px rgba(0,0,0,0.93);
+  cursor: pointer;
+    
+}
+
+#resistorTile{background-image: url(../../images/tiles/resistor.png);}
+#logicTile{background-image: url(../../images/tiles/binary.png);}
+#batteryTile{background-image: url(../../images/tiles/battery.png);}
+#powerTile{background-image: url(../../images/tiles/electricity.png);}
+

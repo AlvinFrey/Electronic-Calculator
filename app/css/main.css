@@ -1,0 +1,155 @@
+
+body{
+
+  background-color: #383838;
+  -webkit-app-region: drag
+
+}
+
+*{
+  color: #D4D4D4;
+}
+
+h5{
+
+  color: #3ED1D6;
+
+}
+
+.controls {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 0;
+  -webkit-app-region: no-drag;
+}
+
+.controls button {
+  width: 30px;
+  height: 25px;
+  border: none;
+  outline: none;
+  -webkit-app-region: no-drag;
+}
+
+.controls #minimize {
+  background: url("../images/controls/minimize-window.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #minimize:hover {
+  background: url("../images/controls/minimize-window-hover.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #minimize:active {
+  background: url("../images/controls/minimize-window-active.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #close {
+  background: url("../images/controls/close-window.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #close:hover {
+  background: url("../images/controls/close-window-hover.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #close:active {
+  background: url("../images/controls/close-window-active.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #refresh {
+  background: url("../images/controls/reload.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #refresh:hover {
+  background: url("../images/controls/reload-hover.svg");
+  -webkit-app-region: no-drag;
+}
+
+.controls #home {
+  background: url(https://cdn1.iconfinder.com/data/icons/flat-artistic-shopping-icons/32/home-24.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-app-region: no-drag;
+}
+
+
+.menuButton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem 1.0625rem 2rem;
+  background-color: #3ED1D6;
+  border-color: #3ED1D6;
+  color: #F2F2F2;
+  transition: background-color 300ms ease-out;
+  width: 170px; 
+  height: 45px;
+  -webkit-app-region: no-drag;
+}
+
+.menuButton:hover, .menuButton:focus {
+  background-color: #30A2A6; 
+  -webkit-app-region: no-drag;
+}
+
+.menuButton:hover, .menuButton:focus {
+  color: #F2F2F2; 
+  -webkit-app-region: no-drag;
+}
+
+.menuButton.disabled, .menuButton[disabled] {
+  background-color: #2ba6cb;
+  border-color: #2285a2;
+  color: #FFFFFF;
+  box-shadow: none;
+  cursor: default;
+  opacity: 0.7; 
+  -webkit-app-region: no-drag;
+}
+
+.menuButton.disabled:hover, .menuButton.disabled:focus, .menuButton[disabled]:hover, .menuButton[disabled]:focus {
+  background-color: #2285a2; 
+  -webkit-app-region: no-drag;
+}
+
+.menuButton.disabled:hover, .menuButton.disabled:focus, .menuButton[disabled]:hover, .menuButton[disabled]:focus {
+  color: #FFFFFF; 
+  -webkit-app-region: no-drag;
+}
+  
+.menuButton.disabled:hover, .menuButton.disabled:focus, .menuButton[disabled]:hover, .menuButton[disabled]:focus {
+  background-color: #2ba6cb; 
+  -webkit-app-region: no-drag;
+}
+
+input{
+
+  -webkit-app-region: no-drag;
+
+}
+
+select{
+
+  -webkit-app-region: no-drag;
+  
+}
+
+.result{
+
+  /*margin-left: 10px;
+  margin-top: 10px;*/
+
+}
