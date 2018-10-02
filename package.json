@@ -14,7 +14,7 @@
         "force_download": false, 
         "linux-x64": true
     }, 
-    "description": "", 
+    "description": "HAPPY HACKTOBERFEST", 
     "nodejs": true, 
     "additional_trust_anchors": [], 
     "inject-js-end": "", 
